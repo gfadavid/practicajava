@@ -8,8 +8,10 @@ package com.mycompany.mavenproject1;
  *
  * @author desarrollo
  */
-public  class Carro  extends Vehiculo{
+// CLASE HIJA DE VEHÍCULO
+public class Carro extends Vehiculo {
 
+    // ABSTRACCIÓN
     @Override
     public void encender() {
         System.out.println("Enceder Carro");
@@ -25,4 +27,10 @@ public  class Carro  extends Vehiculo{
         System.out.println("Acelerar Carro");
     }
 
+    // HERENCIA
+    protected String modelName = "Mustang";    // Car attribute
+
+//    public String getModelName() {
+//        return modelName;
+//    }
 }
